@@ -1,0 +1,33 @@
+name: "go_shop"
+mode: "dev"
+ip: "127.0.0.1"
+port: 8080
+version: "v0.0.1"
+start_time: "2024-04-16"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "go_shop.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: # fill in here
+  dbname: "shop"
+  max_open_conns: 100
+  max_idle_conns: 10
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
+
+consul:
+  addr: "127.0.0.1:8500"
